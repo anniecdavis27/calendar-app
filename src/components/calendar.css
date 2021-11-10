@@ -1,0 +1,72 @@
+.Calendar {
+    margin: auto;
+    width: 420px;
+}
+
+.day-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(0, 33, 63);
+    border-radius: 4px;
+    color: #fff;
+
+}
+
+.weekday {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    display: inline;
+    width: 60px;
+    height: 40px;
+    padding-top: 20px;
+}
+
+.month-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.arrow {
+    display: inline;
+}
+
+.cells {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cell {
+    width: 60px;
+    height: 40px;
+    padding-top: 20px;
+    border-radius: 4px;
+}
+
+.cell:hover {
+background-color: lightgray;
+transition: ease-in-out .2s;
+}
+
+.active {
+    background-color: rgb(0, 33, 63);
+    color: white;
+}
+
+.active:hover {
+    background-color: rgb(0, 33, 63);
+}
+
+
+.tick {
+    width: 0px;
+    height: 0px;
+    position: relative;
+    content: '';
+    border-bottom: 15px solid rgb(0, 33, 63);
+    border-left: 15px solid transparent;
+    bottom: -4px;
+    left: 42px;
+}
